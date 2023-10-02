@@ -43,6 +43,7 @@ const getRawData = async (api, genres, paging = false) => {
     }
    
     return moviesArray;
+    
   };
 
 

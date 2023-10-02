@@ -35,12 +35,14 @@ function Netflix() {
   }
    
   return (
-    <div>
+    <div className=' bg-black overflow-y-auto overflow-x-hidden '>
       <Navbar isScrolled={isScrolled}/>
 
-      <div className=" ">
-        <img className='object-cover w-full  h-[100vh]' src={background} alt="background" />
-        <div className='relative bottom-20  w-fit flex flex-row gap-10 pl-10'>
+      <div className="   ">
+        <img className='  object-cover w-full  h-[100vh]  ' src={background} alt="background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black "></div>
+
+        <div className='relative bottom-20  w-fit flex flex-row gap-10 pl-10 pr-10 '>
           <button onClick={()=>navigate("/player")} className=' bg-neutral-400 rounded  w-fit  p-1 items-center gap-1 flex flex-row  opacity-75'  >
             <FaPlay/>Play
           </button>
